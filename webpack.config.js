@@ -5,28 +5,28 @@ var _ = require('lodash');
 require('babel-polyfill');
 //var CopyWebpackPlugin = require('copy-webpack-plugin');
 
-var DIST_DIR = path.resolve(__dirname, 'dist');
-var SRC_DIR = path.resolve(__dirname, 'src');
+//var DIST_DIR = path.resolve(__dirname, 'dist');
+//var SRC_DIR = path.resolve(__dirname, 'src');
 
 var config = {
-  entry:['babel-polyfill',SRC_DIR+'/main.js'],
+  entry:"./src/main.js",
   output:{
-    path:DIST_DIR,
-    filename:"bundle.js",
-    publicPath:"/dist"
+    path:path.join(__dirname,'/dist'),
+    filename:"[name].js",
+    publicPath:"/"
   },
   devtool: 'source-map',
   plugins: [
-    // new HtmlWebpackPlugin({
-    // template:path.join(__dirname+'/src/index.html'),
-    // filename:"index.html",
-    // inject:'body'
-    // }),
-    //   //  new webpack.DefinePlugin({
-    //   //    __APP_CONFIG__: JSON.stringify(composeConfig(env))
-    //   //  }),
-    // new webpack.HotModuleReplacementPlugin()
-    //    //new CopyWebpackPlugin([{from:path.join(__dirname+'/data/**/*.json'),to:'./'}])
+     new HtmlWebpackPlugin({
+     template:path.join(__dirname+'/src/index.html'),
+     filename:"index.html",
+     inject:'body'
+     }),
+       //  new webpack.DefinePlugin({
+       //    __APP_CONFIG__: JSON.stringify(composeConfig(env))
+       //  }),
+     new webpack.HotModuleReplacementPlugin()
+        //new CopyWebpackPlugin([{from:path.join(__dirname+'/data/**/*.json'),to:'./'}])
   ],
   devServer: {
     contentBase : './dist',
@@ -44,7 +44,7 @@ var config = {
 },
 {
   test: /\.js$/,
-  include: SRC_DIR,
+  //include: SRC_DIR,
   exclude: /(node_modules|bower_components)/,
   loader: 'babel-loader',
   query: {
