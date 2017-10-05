@@ -1,0 +1,40 @@
+.contact_wrapper{
+		width:100%;
+
+	}
+.fa fa-spinner fa-spin{
+  font-size: 30px;
+}
+.codeLeft{
+  background: white;
+padding-left: 2%;
+font-size: 20px;
+padding-top: 5%;
+padding-bottom: 5%;
+width: 70%;
+}
+.helpContent {
+  margin-top: -18%;
+    margin-left: 73%;
+}
+.touchToneMessage1 {
+  margin-top: 4%;
+}
+.security {
+  font-size: 30px;
+  margin-left: 2%;
+  margin-top: 7%;
+  margin-bottom: -4%;
+  font-family: -webkit-pictograph;
+}
+.button3 {
+  margin-left: 82%;
+  margin-top: 9px;
+	margin-bottom: -50px;
+  background-color: #fff;
+  border-color: #f0f1f2;
+  border: none;
+}
+.h2, h2 {
+    font-size: 20px;
+}

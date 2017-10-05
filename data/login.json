@@ -1,0 +1,32 @@
+{
+    "request": {
+        "namespace": "acct.amer",
+        "action": "LOGIN",
+        "credentials": [
+            {
+                "type": "PASSWORD",
+                "value": "password"
+            }
+        ],
+        "redirectURI": "",
+        "device": {},
+        "token": "",
+        "userid": "joe"
+    },
+    "response":{
+        "token": "joePercolatorResponseToken",
+        "status": "PENDING",
+        "next_credential": [
+            {
+                "id": 0,
+                "type": "SMS",
+                "prompt": "9876"
+            },
+            {
+                "id": 1,
+                "type": "SMS",
+                "prompt": "5432"
+            }
+        ]
+    }
+}

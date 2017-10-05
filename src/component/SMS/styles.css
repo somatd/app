@@ -1,0 +1,86 @@
+.message{
+  margin-top: 15px;
+  margin-left: -118px;
+}
+
+.contact1{
+  padding-left: 71%;
+  margin-right: -60px;
+  margin-top: -62px;
+}
+
+.info{
+  margin-top: 60px;
+  margin-left: -121px;
+  margin-right: -110px;
+}
+
+.button {
+  display: block;
+  color: #FFFFFF;
+  background-color: #1C9F00;
+  border: 1px solid #1C9F00;
+  width: 23%;
+  margin-left: 80px;
+  margin-bottom: 25px;
+  padding: 6px 12px;
+  font-family: "HelveticaNeueW01-45Ligh",Helvetica,Arial,sans-serif;
+  font-size: 1.1em;
+}
+
+.button2 {
+  display: block;
+  color: #FFFFFF;
+  background-color: #1C9F00;
+  border: 1px solid #1C9F00;
+  width: 28%;
+  margin-left: -37%;
+  padding: 6px 12px;
+  font-family: "HelveticaNeueW01-45Ligh",Helvetica,Arial,sans-serif;
+  font-size: 1.1em;
+}
+
+.button:hover {
+  background-color: #20b900;
+}
+
+.button1{
+  margin-left: 86px;
+  margin-top: -50px !important;
+  background-color: #f0f1f2 !important;
+  border-color: #f0f1f2
+}
+
+.final{
+  align-content: center;
+  padding-left: 41%;
+  margin-top: 14%;
+}
+
+.textBox{
+  width: 50%;
+  background: white;
+}
+
+.h1, .h2, .h3, .h4, h1, h2, h3, h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.h4, h4 {
+    font-size: 22px;
+}
+
+.h1, h1 {
+  font-size: 30px;
+  margin-left: 23%;
+}
+
+.h5, h5{
+  font-size: 18px;
+}
+
+@media (min-width: 1200px){
+.container {
+  width: 710px !important;
+}
+}
